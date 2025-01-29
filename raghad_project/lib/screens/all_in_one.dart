@@ -1,5 +1,6 @@
 // screens/landing_page.dart
 import 'package:flutter/material.dart';
+import 'package:raghad_project/examples/task_x.dart';
 import '../examples/bottom_nav_examples.dart';
 import '../examples/botton_in_form_example.dart';
 import '../examples/counter_example.dart';
@@ -23,6 +24,17 @@ class AllInOneScreen extends StatelessWidget {
 
   // A list of example items to display in the grid.
   final List<ExampleItem> examples = [
+    ExampleItem(
+      title: 'Task X Example',
+      imageUrl:
+          'https://static.vecteezy.com/system/resources/previews/012/957/835/non_2x/flutter-comic-bright-template-with-speech-bubbles-on-colorful-frames-free-vector.jpg',
+      onTap: (context) {
+        Navigator.push(
+          context,
+          MaterialPageRoute(builder: (_) => const TaskX()),
+        );
+      },
+    ),
     ExampleItem(
       title: 'Simple Layout Page Example',
       imageUrl:

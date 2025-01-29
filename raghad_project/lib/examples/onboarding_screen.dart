@@ -33,7 +33,7 @@ class OnboaardingScreen extends StatelessWidget {
                       //mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Container(
-                            child: Image.asset("assets/images/world-pana.png")),
+                            child: Image.asset("assets/images/world-pana.jpg")),
                         Text(
                           'Onboarding Screen',
                           style: TextStyle(
